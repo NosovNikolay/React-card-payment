@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { CSSTransition, TransitionGroup, SwitchTransition } from 'react-transition-group';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 export const CardNumberDigit = (props) => {
     const digit = props.digit;
-    const child = props.child;
 
     let [digitStyle, setDigitStyle] = useState('absolute');
     let [sharpStyle, setSharpStyle] = useState('relative');
