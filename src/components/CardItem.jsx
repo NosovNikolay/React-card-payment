@@ -45,6 +45,7 @@ const CardItem = (value) => {
         console.log(element);
         if (element.id === 'v-card-number') {
             return {
+                background: 'rgba(0,0,0,.3)',
                 marginTop: '138px',
                 marginLeft: '15px',
                 width: '335px',
@@ -55,6 +56,7 @@ const CardItem = (value) => {
 
         if (element.id === 'v-card-name') {
             return {
+                background: 'rgba(0,0,0,.3)',
                 marginTop: '190px',
                 marginLeft: '15px',
                 width: '310px',
@@ -64,6 +66,7 @@ const CardItem = (value) => {
         }
 
         return {
+            background: 'rgba(0,0,0,.3)',
             marginTop: '205px',
             marginLeft: '330px',
             width: '80px',
@@ -128,7 +131,8 @@ const CardItem = (value) => {
                                     alt="a"></img>
                             </div>
 
-                            <label htmlFor="v-card-number" className="card-item__number">
+                            <label htmlFor="v-card-number"
+                                   className="card-item__number">
                                 <CardNumber
                                     cardNumber={cardNumber}
                                     isHidden={isHidden}></CardNumber>
